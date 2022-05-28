@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@500&family=Macondo&family=Quicksand:wght@300&display=swap');
+
+/* styling of html content */
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 62.5%;
+    word-spacing: 1px;
+    color: black;
+  }
+  
+  /* found these when inspecting the code - resolved spacing issue
+      
+      * will apply to the whole page - Asked Gwyl */
+  *,
+  ::after,
+  ::before,
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+  }
+  
+  /* The body styling */
+  body {
+    font-size: 1.8rem;
+  }
+  
+  /* container is the whole webpage, header, footer, content are all contained in the conntainer  */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* The header section */
+  .heading {
+    background: linear-gradient(
+        black,
+        red
+    ) 0 100% no-repeat;
+    color: #fff;
+    font-size: 19px;
+  }
+  
+  /* The content within the header */
+  .headingContent {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: left;
+  }
+  
+  h2 {
+    text-align: left;
+    color: black;
+    font-size: 1.9rem;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: #031321;
+}
+/* more content */
+
+#keybinds{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  
+  
+}
+.key-wrapper{
+  margin: 10px;
+  width : 25vw;
+  height: 16vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 30px;
+  font-size: 18px;
+  
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(
+        pink,
+        blue
+    ) 0 100% no-repeat;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.key-wrapper:hover{
+  background-color: black;
+  opacity: 80%;
+}
+.key-wrapper:active{
+  box-shadow: 0 5px white;
+  transform: translateY(4px);
+}
+/* this is for activating through JS instead of clicking the button */
+.activate{
+  box-shadow: 0 0 0 5px gold;
+  transform: translateY(4px);
+  }
+  
+  /* navbar */
+  .heading {
+    background-color: #2a5a97;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .navbar {
+    max-width: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  
+  .flex-nav a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    color: #f49446;
+  }
+  
+  .flex-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .flex-nav ul li {
+    flex-grow: 1;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  #textArea {
+    background-color: #2a5a97;
+    color: #fff;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0 20px 20px;
+  }
+  
+  .content {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+  
+  .content ul {
+    padding: 10px;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #2a5a97;
+    justify-content: space-around;
+  }
+  
+  .content li {
+    list-style: none;
+    flex-grow: 1;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #2a5a97;
+    border-radius: 15px;
+    background-color: #2a5a97;
+    box-shadow: 0 0 10px #2a5a97;
+    color: #f49446;
+  }
+  
+ 
+  
+  /* ------ */
+  /* footer */
+  .foot {
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(
+        black,
+        red
+    ) 0 100% no-repeat;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: #94a4b3;
+    width: 100%;
+  }
+  
+  /* mobile and view for screens less than 500px */
+  @media only screen and (max-width: 500px) {
+    .headingContent {
+      font-size: 80%;
+    }
+  
+    h2 {
+      font-size: 80%;
+    }
+  
+    .foot {
+      position: relative;
+      bottom: 0px;
+    }
+  }
